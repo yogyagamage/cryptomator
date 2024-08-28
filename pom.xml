@@ -25,6 +25,7 @@
 	</developers>
 
 	<properties>
+		<argLine>--enable-preview</argLine>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.jdk.version>22</project.jdk.version>
 
@@ -353,7 +354,6 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-					<argLine>--enable-preview ${argLine}</argLine>
 					<reportFormat>plain</reportFormat>
 					<consoleOutputReporter>
 						<disable>true</disable>
