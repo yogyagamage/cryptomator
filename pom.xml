@@ -353,7 +353,7 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-					<argLine>--enable-preview</argLine>
+					<argLine>@{argLine} --enable-preview</argLine>
 					<reportFormat>plain</reportFormat>
 					<consoleOutputReporter>
 						<disable>true</disable>
@@ -453,10 +453,6 @@
 								<exclude>**/Dagger*</exclude>
 							</excludes>
 						</configuration>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-surefire-plugin</artifactId>
 					</plugin>
 				</plugins>
 			</build>
