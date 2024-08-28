@@ -40,3 +40,10 @@ jobs:
           message: 'commit badge'
           add: '*.svg'
 
+      - name: Upload JaCoCo exec file
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: jacoco-exec
+          path: target/jacoco.exec
+
