@@ -28,6 +28,9 @@ jobs:
         run: >
           xvfb-run
           mvn -B verify -P coverage -X
+      - name: Run jacoco
+        run: >
+          mvn jacoco:report -P coverage
       - name: Generate JaCoCo Badge
         uses: cicirello/jacoco-badge-generator@v2
         with:
