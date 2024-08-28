@@ -27,10 +27,10 @@ jobs:
       - name: Build and Test
         run: >
           xvfb-run
-          mvn -B verify -P coverage -X
+          mvn -B verify
       - name: Run jacoco
         run: >
-          mvn jacoco:report -P coverage
+          mvn jacoco:report -P coverage -X
       - name: Generate JaCoCo Badge
         uses: cicirello/jacoco-badge-generator@v2
         with:
