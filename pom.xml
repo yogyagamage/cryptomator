@@ -353,7 +353,7 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-					<argLine>@{argLine} --enable-preview</argLine>
+					<argLine>--enable-preview ${argLine}</argLine>
 					<reportFormat>plain</reportFormat>
 					<consoleOutputReporter>
 						<disable>true</disable>
