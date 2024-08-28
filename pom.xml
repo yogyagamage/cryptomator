@@ -449,6 +449,7 @@
 							</execution>
 						</executions>
 						<configuration>
+							<verbose>true</verbose>
 							<excludes>
 								<exclude>**/*_*</exclude>
 								<exclude>**/Dagger*</exclude>
