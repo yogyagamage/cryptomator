@@ -353,6 +353,7 @@
 					</dependency>
 				</dependencies>
 				<configuration>
+					<argLine>--enable-preview</argLine>
 					<reportFormat>plain</reportFormat>
 					<consoleOutputReporter>
 						<disable>true</disable>
@@ -442,6 +443,7 @@
 							<execution>
 								<id>report</id>
 								<goals>
+									<phase>test</phase>
 									<goal>report</goal>
 								</goals>
 							</execution>
