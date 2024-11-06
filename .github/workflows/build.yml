@@ -25,9 +25,9 @@ jobs:
           java-version: ${{ env.JAVA_VERSION }}
           cache: 'maven'
       - name: Build and Test
-        run: >
+        run: |
           export MAVEN_OPTS="-XX:+PrintFlagsFinal" 
-          mvn -B verify -Djavafx.platform=linux -Pcoverage
+          mvn verify -Djavafx.platform=linux -Pcoverage
           unset MAVEN_OPTS
       - name: Get JaCoCo Coverage
         id: coverage  
