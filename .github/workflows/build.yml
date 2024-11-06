@@ -26,11 +26,8 @@ jobs:
           cache: 'maven'
       - name: Build and Test
         run: >
-          xvfb-run
           export MAVEN_OPTS="-XX:+PrintFlagsFinal" 
-          mvn -B verify -Djavafx.platform=linux
-          jacoco:report
-          -Pcoverage
+          mvn -B verify -Djavafx.platform=linux -Pcoverage
           unset MAVEN_OPTS
       - name: Get JaCoCo Coverage
         id: coverage  
